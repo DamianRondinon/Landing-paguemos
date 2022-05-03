@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h1{font-size: 2.em;}
 h2{font-size: 1.8em;}
 h3{font-size: 1.5em;}
@@ -94,9 +98,50 @@ header a:hover{
 #nuestros-servicios{
     background-color: rgb(20, 20, 20);
     color: white;
+    text-align: center;
 }
 
 
 #nuestros-servicios, .container{
- text-align: center;
+ padding: 160px 10px;
 }
+
+#nuestros-servicios h2{
+    margin-top: 0;
+}
+
+#nuestros-servicios p{
+    display: none;
+}
+
+#nuestros-servicios, .card{
+
+}
+
+.card:first-child{
+background-image: linear-gradient(
+0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+)
+,url(imgs/app.jpg)
+}
+
+.card:nth-child(2){
+background-image: linear-gradient(
+0deg,
+            rgba(0,0,0,0.2),
+            rgba(0,0,0,0.2)
+        )
+,url(imgs/Clientes.jpg)
+}
+
+.card:nth-child(3){
+background-image: linear-gradient(
+0deg,
+            rgba(0,0,0,0.2),
+            rgba(0,0,0,0.2)
+                )
+,url(/imgs/local.jpg)
+}
+
